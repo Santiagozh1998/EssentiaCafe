@@ -1,0 +1,12 @@
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    background: #053A21;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer div span a{
+    color: #E6AA30;
+}

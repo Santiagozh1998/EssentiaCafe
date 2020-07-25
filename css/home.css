@@ -1,0 +1,58 @@
+.home{
+    text-align: center;
+}
+
+.banner-home img{
+    width: 100%;
+}
+
+.banner-home{
+    margin-bottom: 50px;
+}
+
+.text-home{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.grid-food{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.grid-food div img{
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .grid-food{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.button-menu{
+    background: #EE2F2D;
+    color: white;
+    border: 0px;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.home-social{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 18px;
+}
+
+.home-social a{
+    font-size: 60px;
+    color: black;
+}

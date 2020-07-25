@@ -1,0 +1,85 @@
+.navbar{
+    background:#053A21;
+    font-family: 'Allert', sans-serif;
+}
+
+.navbar div{
+    color: white;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar ul li{
+    display: inline-block;
+}
+
+.navbar ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+
+label #sign-one, label #sign-two{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    margin-right: 5px;
+}
+
+#res-menu{
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .navbar div{
+        width: 90%;
+    }
+
+    label #sign-one{
+        display: block;
+    }
+
+    .navbar ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        top: 120px;
+        left: -100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        transition: .5s;
+        z-index: 10;
+    }
+
+    .navbar ul li{
+        display: block;
+        margin: 40px 0;
+        line-height: 30px;
+    }
+    
+    .navbar ul li a{
+        margin-left: 0px;
+        font-size: 20px;
+        color: #053A21;
+    }
+    
+    #res-menu:checked ~ul{
+        left: 0;
+    }
+
+    #res-menu:checked ~ label #sign-one{
+        display: none;
+    }
+
+    #res-menu:checked ~ label #sign-two{
+        display: block;
+    }
+}
